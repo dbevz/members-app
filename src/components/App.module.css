@@ -1,0 +1,12 @@
+.app {
+  display: block;
+  width: 400px;
+  margin: 50px auto 0 auto;
+}
+
+.header {
+  font-family: "Galada";
+  font-size: 32px;
+  color: #2574A9;
+  text-align: center;
+}

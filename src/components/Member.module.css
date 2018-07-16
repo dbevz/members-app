@@ -1,0 +1,59 @@
+.member {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border: solid 1px #DADFE1;
+}
+
+.avatar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 24px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.location {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.location i {
+  color: #00B16A;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-size: 36px; 
+  justify-content: flex-start; 
+}
+
+.social-link {
+  color: #BDC3C7;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.social-link:hover i {
+  color: #333;
+}
+
+.social-link:visited {
+  color: #BDC3C7;
+}
