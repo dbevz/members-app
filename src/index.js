@@ -14,7 +14,7 @@ const DATA = [
   },
   {
     id: 2,
-    name: "Вася Пупкин",
+    name: "Жора Жоркин",
     avatar: "https://avatars2.githubusercontent.com/u/10597581?s=460&v=4",
     location: "Киев",
     facebook: "https://facebook.com",
@@ -23,7 +23,7 @@ const DATA = [
   },
   {
     id: 3,
-    name: "Вася Пупкин",
+    name: "Слава Славкин",
     avatar: "https://avatars2.githubusercontent.com/u/10597581?s=460&v=4",
     location: "Киев",
     facebook: "https://facebook.com",
@@ -32,7 +32,7 @@ const DATA = [
   },
   {
     id: 4,
-    name: "Вася Пупкин",
+    name: "Другой Чувак",
     avatar: "https://avatars2.githubusercontent.com/u/10597581?s=460&v=4",
     location: "Киев",
     facebook: "https://facebook.com",

@@ -1,33 +1,40 @@
 import React, {Component} from 'react';
-import Member from './Member.jsx';
+import MemberList from './MemberList.jsx';
 import style from './App.module.css';
 
-const {app, header} = style;
+const {app, header, searchForm, searchInput} = style;
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      search: ''
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({search: event.target.value});
   }
 
   render() {
+    const list = this.state.search === '' ? 
+      this.props.data :
+      this.props.data.filter(elem => elem.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1);
     return (
       <div className={app}>
         <h1 className={header}>Meet React Course Members</h1>
-        {
-          this.props.data.map((elem) => 
-          <Member
-            key={elem.id}
-            name={elem.name}
-            avatar={elem.avatar}
-            location={elem.location}
-            facebook={elem.facebook}
-            github={elem.github}
-            email={elem.email}
+        <form className={searchForm}>
+          <input
+            type="text"
+            name="search"
+            className={searchInput}
+            value={this.state.search}
+            onChange={this.handleChange}
           />
-          )
-        }
-        {/* <MemberList members={this.props.data} /> */}
+        </form>
+        <MemberList list={list} />
       </div>
     );
   }

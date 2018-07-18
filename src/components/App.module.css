@@ -10,3 +10,13 @@
   color: #2574A9;
   text-align: center;
 }
+
+.search-form {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 18px;
+}
